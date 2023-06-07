@@ -14,6 +14,11 @@ export class FtpService {
     this._ftpClient = new Client();
   }
 
+
+  get client(): Client {
+    return this._ftpClient;
+  }
+
   /**
    * List files inside a certain directory
    * keep path empty to list the root folder of the ftp
